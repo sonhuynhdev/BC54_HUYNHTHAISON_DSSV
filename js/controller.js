@@ -35,7 +35,11 @@ function renderDSSV(dssv) {
           <td>${sv.ma}</td>
           <td>${sv.ten}</td>
           <td>${sv.email}</td>
-          <td>${sv.tinhDTB()}</td>
+          <td>0</td>
+          <td>
+            <button onclick="xoaSV('${sv.ma}')" class='btn btn-danger'>Xoá</button>
+            <button onclick="suaSV('${sv.ma}')"  class='btn btn-warning'>Sửa</button>
+          </td>
           </tr>`;
     //cộng dồn chuỗi tr vào contentHTML
     contentHTML = contentHTML + trString;
